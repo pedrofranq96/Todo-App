@@ -2,13 +2,10 @@ import React from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { markAsDone, markAsPending, remove } from "./todoActions";
-
 import IconButton from "../template/iconButton";
 import '../template/custom.css'
 
-
 const TodoList = props => {
-
     const renderRows = () => {
         const list = props.list || []
         return list.map(todo => (
@@ -28,7 +25,6 @@ const TodoList = props => {
             </tr>
         ))
     }
-
     return (
         <table className="table">
             <thead>
